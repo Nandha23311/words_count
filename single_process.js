@@ -2,14 +2,14 @@ const fs = require('fs');
 const readline = require('readline')
 
 const file_stream = fs.createReadStream('./books/big.txt');
-const { get_top_result, process_word ,get_meaning} = require("./util")
+const { get_top_result, process_word, get_meaning } = require("./util")
 
 const read_line = readline.createInterface({
     input: file_stream,
     crlfDelay: Infinity
 });
 
-let result_object ={}
+let result_object = {}
 
 console.time("time")
 
